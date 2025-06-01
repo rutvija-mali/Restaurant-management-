@@ -1,0 +1,256 @@
+.detailsContainer{
+    width: 100%;
+    z-index: 1;
+}
+.cartItemContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartItemContainer .foodDetails{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+    padding: 0.8rem 0rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.foodDetails .left{
+    width: 45%;
+    height: 122px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 14px 0px #0000002B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.foodDetails .left img{
+    width: 90%;
+    height: 106px;
+    border-radius: 4px;
+
+}
+.foodDetails .right{
+    width: 50%;
+}
+
+.itemTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 8px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.itemTitle h3{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    
+}
+.price{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #272727;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0.5rem;
+
+
+}
+
+.qtyDiv button{
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    gap: 10px;
+    border: 1px solid #10101066;
+    display: flex;
+    align-items: center;
+
+}
+.qtyDiv{
+    display: flex;
+    align-items: center;
+}
+.prepTime{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.prepTime span{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 0.5;
+
+
+}
+
+.detailsContainer button{
+    border: none;
+    background-color: transparent;
+    font-family: inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #8C7B7B;
+    border-bottom: 1px dotted #C4C4C4;
+
+}
+
+.actionTabs{
+    width: 95%;
+    height: 60px;
+    background-color: #E4E4E4;
+    border-radius: 32px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.actionTabs button{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 158px;
+    height: 42px;
+    border-radius: 23px;
+    color: #000000 !important;
+    border: none;
+    cursor: pointer;
+}
+.actionTabs .active{
+    background-color: #FFFFFF;
+}
+.priceSection {
+  font-family: sans-serif;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 16px;
+  background-color: #FFF48F24;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #817070;
+
+}
+
+
+.addUser{
+    cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.grandTotal {
+  font-family: poppins;
+font-weight: 600;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: 0%;
+text-align: center;
+color: #000000;
+margin-top: 1.5rem;
+
+}
+
+.userSection{
+    
+     border-top: 3px solid #E5E5E5;
+    border-bottom: 3px solid #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userSection .details{
+    width: 70%;
+}
+.userSection .details h3{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: start;
+
+}
+.userSection .details p{
+    font-family: poppins;
+font-weight: 400;
+font-size: 12px;
+line-height: 13.5px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.userSection button{
+    color: #000000;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #606060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.adressContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-top: 3px solid #E5E5E5;
+    border-bottom: 3px solid #E5E5E5;
+}
+.adressContainer div{
+    width: 100%;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    
+}
+.adressContainer div img{
+    margin-right: 0.5rem;
+}
+.adressContainer div p{
+    margin-bottom: 0;
+}

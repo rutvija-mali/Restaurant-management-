@@ -1,0 +1,40 @@
+.dashContainer{
+    width: 98%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+.container{
+    width: 97%;
+    margin: 0 auto;
+}
+.dashContainer h3{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #565656;
+    
+
+}
+.dashCard{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    gap: 2rem;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 3rem auto;
+    
+}
+.table{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}

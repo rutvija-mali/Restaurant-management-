@@ -1,0 +1,21 @@
+.chefTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px solid #DDDDDD;
+  font-family: sans-serif;
+}
+
+.chefTable th,
+.chefTable td {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 10px;
+  text-align: left;
+}
+
+.chefTable thead {
+  background-color: #f0f0f0;
+}
+
+.nameColumn {
+  width: 250px; 
+}

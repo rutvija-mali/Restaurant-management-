@@ -1,0 +1,30 @@
+
+.dataCardContainer {
+  width: 16.44rem;
+  height: 8.75rem;
+  background-color: #F0F5F3;
+  border-radius: 0.5rem;
+  border: 0.13rem solid #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dataCardInfo {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 1.38rem;
+  vertical-align: middle;
+  color: #626262;
+}
+
+.dataTitle {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 0.63rem;
+  vertical-align: middle;
+  color: #666666;
+}
+

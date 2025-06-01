@@ -1,0 +1,32 @@
+.topbarConatiner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.circulerDiv {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background: var(--bg-white);
+  margin-left: 1rem;
+}
+
+.topbarConatiner input {
+  width: 27.3rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: none;
+  text-indent: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.topbarConatiner input.placeholder {
+  color: #AFABAF;
+}

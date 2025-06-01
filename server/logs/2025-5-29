@@ -1,0 +1,15 @@
+2025-05-29T17:18:58.940Z-TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\express\lib\response.js:1020:12)
+    at ServerResponse.json (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\express\lib\response.js:243:14)
+    at file:///C:/Users/rutvi/OneDrive/Desktop/cuvette-react/restaurants-management/server/routes/Menu.js:20:21
+    at Layer.handleRequest (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\router\index.js:295:15

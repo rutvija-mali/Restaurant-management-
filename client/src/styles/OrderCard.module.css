@@ -1,0 +1,137 @@
+.OrderCard{
+    width: 247px;
+    height: 330px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cardHeader{
+  width: 217px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: var(--bg-white);
+  display: flex;
+  align-items: start;
+  gap: 5px;
+    
+}
+
+.left{
+    width: 50%;
+    padding-left: 4px;
+}
+.right{
+    width: 95px;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+
+}
+.topSection{
+    display: flex;
+    gap: 10px;
+    padding-top: 4px;
+}
+.topSection span{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #111111;
+
+}
+.orderDetails{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-top: 4px;
+}
+.totalItems{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 150%;
+    letter-spacing: 0%;
+   
+}
+
+.cardFooter{
+    width: 107px;
+    height: 30px;
+    border-radius: 15px;
+
+}
+
+.right p{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+.right p:nth-child(2){
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 8.5px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #2C2C2E;
+    text-align: center;
+}
+
+.cardBody{
+    width: 218px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: var(--bg-white);
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 16px;
+    box-sizing: border-box;
+ 
+}
+.cardBody p{
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+.cardFooter{
+    width: 110px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+.cardFooter span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

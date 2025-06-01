@@ -1,0 +1,24 @@
+.orderContainer{
+   width: 98%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-sizing: border-box;
+}
+.orderContainer h3{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #565656;
+}
+.mainContent{
+    width: 95%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}

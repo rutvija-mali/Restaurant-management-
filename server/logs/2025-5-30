@@ -1,0 +1,6 @@
+2025-05-30T18:04:38.036Z-ValidationError: Order validation failed: items.0.qty: Path `qty` is required., items.1.qty: Path `qty` is required.
+    at Document.invalidate (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\mongoose\lib\document.js:3343:32)
+    at Subdocument.invalidate (C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\mongoose\lib\document.js:3104:17
+    at C:\Users\rutvi\OneDrive\Desktop\cuvette-react\restaurants-management\server\node_modules\mongoose\lib\schemaType.js:1407:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

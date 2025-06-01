@@ -1,0 +1,131 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+  max-width: 390px;
+ 
+}
+
+
+.modal {
+  width: 100%;
+  max-width: 390px;
+  background-color: #F0F5F3;
+  border-radius: 25px 25px 0 0;
+  padding: 16px;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.3s ease-out;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.overlay .closeBtn {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 61px;
+  height: 61px;
+  background-color: #282828;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.heading {
+ font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 13.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+.txetareaContainer{
+    width: 90%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textarea {
+  width: 90%;
+  height: 76px;
+  border-radius: 8px;
+  background-color: #F0F5F3;
+  border: 1px solid #C7C7C7;
+  resize: none;
+  text-indent: 1rem;
+}
+
+.note {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 13.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E6E6E;
+    margin-top: 1.5rem;
+}
+
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  border-radius: 21px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding: 1rem 0.5rem;
+}
+
+
+.actions .cancel {
+    width: 185px;
+    height: 55px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #F0F5F3;
+    color: #505050;
+}
+
+.actions .next {
+ width: 185px;
+    height: 55px;
+    border-radius: 15px;
+  cursor: pointer;
+  background-color: #505050;
+  color: #FEFEFE;
+} 

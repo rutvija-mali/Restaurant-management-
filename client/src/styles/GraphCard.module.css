@@ -1,0 +1,94 @@
+.graphContainer{
+    width: 410px;
+    height: 368px;
+    border-radius: 8px;
+    border-width: 2px;
+    background-color: #F0F5F3;
+    border: 2px solid #D9D9D9;
+
+}
+.graphHeader{
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 0rem 0.5rem;
+}
+
+.graphInfo h4{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6E6E6E;
+    margin-bottom: 0px;
+
+}
+.graphInfo p{
+   
+    color: #858585;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12.2px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+.graphRange{
+    width: 100px;
+    height: 40px;
+    border-radius: 21px;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #B9B8BE;
+    text-indent: 1rem;
+    align-self: center;
+
+}
+.graphBody{
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.bullets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    margin-right: 2rem;
+}
+.reserved{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3DC35F;
+
+}
+.point{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.available{
+      width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--bg-white);
+}
