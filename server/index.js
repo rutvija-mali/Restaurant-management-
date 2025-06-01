@@ -16,7 +16,7 @@ const port = process.env.PORT||5000
 const app = express()
 
 app.use(express.json())
-const allowedOrigins = ['http://localhost:5173','http://localhost:5174','https://restaurant-management-b6gd.vercel.app/','https://restaurant-management-dzmi.vercel.app/'];
+const allowedOrigins = ['http://localhost:5173','http://localhost:5174','https://restaurant-management-b6gd.vercel.app','https://restaurant-management-dzmi.vercel.app'];
 
 app.use(cors({
   origin: (origin, callback) => {
