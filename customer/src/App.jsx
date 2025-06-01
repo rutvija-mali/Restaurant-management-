@@ -1,7 +1,7 @@
 
 import './App.css'
 import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
-import Details from './pages/details'
+import Details from './pages/Details'
 import Layout from './pages/Layout'
 import Menu from './pages/Menu'
 import 'react-toastify/dist/ReactToastify.css';
