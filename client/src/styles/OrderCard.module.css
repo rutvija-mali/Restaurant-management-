@@ -36,6 +36,8 @@
     border-radius: 15px;
     margin-top: 1rem;
     margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
 
 }
 .topSection{
@@ -134,4 +136,24 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.selectOrder {
+  width: 70px;
+  height: 20px;
+  padding: 2px 4px;
+  background-color: #ffffff; 
+  border: none;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: #2C2C2E;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  align-self: center;
+}
+.selectOrder:focus {
+  box-shadow: 0 0 0 1.5px #3181A3;
 }

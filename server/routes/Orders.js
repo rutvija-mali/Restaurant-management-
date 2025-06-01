@@ -231,4 +231,16 @@ OrderRouter.get('/order-revenue',async(req,res)=>{
     }
 })
 
+OrderRouter.put('/id/:id',async(req,res)=>{
+    try {
+        const id = req.params.id
+        const {status} = req.query
+        await Order.findByIdAndUpdate(new mongoose.Types.ObjectId(id),{status:'Served'})
+
+        res.status(200)
+    } catch (error) {
+        errorLogger(error,req,res)
+    }
+})
+
 export default OrderRouter

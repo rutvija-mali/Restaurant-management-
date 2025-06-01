@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/OrderCard.module.css';
 import cutlurySvg from '../assets/cutlury.svg';
 import { RxCross2 } from "react-icons/rx";
 import timeSvg from '../assets/time.svg';
 import successSvg from '../assets/suceesMarkedSvg.svg';
 import blueSuccessSvg from '../assets/blueSuccessSvg.svg';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+import axios from 'axios'
+import {toast} from'react-toastify'
 
 const OrderCard = ({ order }) => {
-  console.log(order);
-  
+
+  const handleOrderStatusUpdate= async(e,id)=>{
+    try {
+      const response = await axios.put(`${API_BASE_URL}/api/orders/id/${id}`,{
+        params:{
+          status:e.target.value
+        }
+      })
+      if(response.status === 200){
+        toast.success('Order status updated')
+      }
+    } catch (error) {
+      toast.error(error.message||'Something went wrong')
+    }
+  }
   const formatedTime = new Date(order.orderPlacedAt).toLocaleTimeString([], {
     hour: '2-digit',
     minute: '2-digit',
@@ -76,7 +92,16 @@ const OrderCard = ({ order }) => {
             }}
           >
             <p>{order.orderType}</p>
-            <p>{order.status}{order.status != 'Served'? ` ${remainingTime} min`:''}</p>
+            {order.status !== 'Not Picked Up'&&<p>{order.status}{order.status != 'Served'? ` ${remainingTime} min`:''}</p>}
+           {order.status === 'Not Picked Up'&& 
+            <select name="status" id="" 
+              className={styles.selectOrder} 
+              onChange={(e)=>handleOrderStatusUpdate(e,order._id)}
+              defaultValue="Not Picked Up"
+            > 
+              <option value="Not Picked Up" >Not picked up</option>
+              <option value="Picked up">Picked up</option>
+            </select>}
           </div>
         </div>
 

@@ -60,7 +60,7 @@ const Menu = () => {
 
    function getItemQty(id){
       const item = cart.find((item)=>item._id === id)
-       return item.qty
+       return item ? item.qty : 0; 
    }
 
 
